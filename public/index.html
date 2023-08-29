@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Portfolio Application</title>
+    <style>
+        /* Add custom styles for the active link */
+        .active-link {
+            color: rgb(0, 76, 255);
+            /* Change to your desired active link color */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container m-auto">
+        <!-- Navbar -->
+        <nav class="p-6">
+            <div class="container mx-auto flex justify-center items-center">
+                <div id="mobile-menu" class=" md:flex space-x-4">
+                    <a href="/" class="text-black hover:text-blue-300 font-bold active-link">Home</a>
+                    <a href="projects.html" class="text-black hover:text-blue-300 font-bold">Projects</a>
+                    <a href="publication.html" class="text-black hover:text-blue-300 font-bold">Publications</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class=" text-white text-center relative">
+            <!-- Video Background -->
+            <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-10">
+                <source src="./img/background-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Gradient Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-white opacity-50 z-1">
+            </div>
+            <div
+                class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+                <!-- Left Side -->
+                <div class="relative px-20">
+                    <div class="text-center md:text-center -mt-6 z-10 relative">
+                        <!-- Add z-10 to keep content above the video -->
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="./img/img1.png" alt="Hero Image"
+                                class="mx-auto md:mx-0 w-24 h-24 md:w-44 md:h-44 rounded-full mt-4">
+                            <h2 class="text-xl font-semibold md:-mt-8 text-black">Anwar Sadad</h2>
+                        </div>
+                        <div class="space-y-4 my-6 font-semibold">
+                            <a href="#" class="text-blue-300 hover:underline px-2">CV</a>
+                            <a href="#" class="text-blue-300 hover:underline px-2">Google Scholar</a>
+                            <a href="#" class="text-blue-300 hover:underline px-2">LinkedIn</a>
+                            <a href="#" class="text-blue-300 hover:underline">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="text-center md:text-center px-20">
+                    <h3 class="text-2xl text-blue-300 font-semibold mb-4">Interrests</h3>
+                    <ul class="list-disc list-inside text-left md:text-left text-black">
+                        <li>Recommender System</li>
+                        <li>Graph Neural Networks</li>
+                        <li>Deep Learning</li>
+                        <li>Liquid Neural Networks</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Paragraphs Section -->
+        <section class="container mx-auto py-2">
+            <div class="flex flex-col md:flex-col bg-white p-2 shadow-md rounded-md">
+                <p>I am M. Phil Scholar at Quaid-i-Azam University, Islamabad with a Assistant Professor <b>Dr. Akmal
+                        Saeed Khattak</b>. I have completed my bachelors (2021) from University of Buner under the
+                    supervision of <b>Dr. Inayat Ullah</b></p> <br>
+                <p>My final year research focuses on Point-of-Interest Recommendation using Graph Neural Network. The
+                    purpose of the research is to bridge the gap of personalized recommendation incorporating spatial,
+                    temporal, social, and textual features using graph neural network. My objective is to solve complex
+                    social problems by using the power of graph neural network to ease the way of living, and facilitate
+                    people with relevant information.</p> <br>
+                <p">Despite my research background, I have hands-on experience machine learning, deep learning, graph
+                    neural networks, and data science. Furthermore, I have skills related to web technologies,
+                    databases, designing workflows & architectures, and project management skills which has been taught
+                    by Google on Coursera.</p>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="container mx-auto p-6">
+            <div class="flex flex-col space-y-6 md:flex-row md:space-x-16 justify-center items-center">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-md flex flex-col text-center border-2 border-blue-300">
+                    <img src="./img/project.jpg" alt="Projects" class="h-48 object-cover">
+                    <h3 class="text-lg font-semibold mb-2 bg-blue-500 py-2 -mx-2 text-white px-2">Projects</h3>
+                    <div class="pb-6">
+                        <p class="text-gray-600 mx-4">Some of my projects during my studies.</p>
+                        <a href="#" class="text-blue-500 hover:underline -mb-12 px-2 font-bold">Read more</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-md flex flex-col text-center border-2 border-blue-300 pb-16">
+                    <img src="./img/docs.jpg" alt="Projects" class="h-48 object-cover">
+                    <h3 class="text-lg font-semibold mb-2 bg-blue-500 py-2 -mx-2 text-white px-2">Publications</h3>
+                    <p class="text-gray-600 px-2">Recent latest published works</p>
+                    <a href="#" class="text-blue-500 hover:underline -mb-12 px-2">Read more</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-md flex flex-col text-center border-2 border-blue-300 pb-16">
+                    <img src="./img/award.jpg" alt="Projects" class="h-48 object-cover">
+                    <h3 class="text-lg font-semibold mb-2 bg-blue-500 py-2 -mx-2 text-white px-2">Awards &
+                        Certifications</h3>
+                    <p class="text-gray-600 px-2">My awards and certifications</p>
+                    <a href="#" class="text-blue-500 hover:underline -mb-12 px-2">Read more</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

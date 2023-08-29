@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet" />
+    <title>Publications</title>
+    <style>
+        /* Add custom styles for the active link */
+        .active-link {
+            color: rgb(0, 76, 255);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="p-6">
+            <div class="container mx-auto flex justify-center items-center">
+                <div id="mobile-menu" class=" md:flex space-x-4">
+                    <a href="index.html" class="text-black hover:text-blue-300 font-bold">Home</a>
+                    <a href="projects.html" class="text-black hover:text-blue-300 font-bold">Projects</a>
+                    <a href="publication.html"
+                        class="text-black hover:text-blue-300 font-bold active-link">Publications</a>
+                </div>
+            </div>
+        </nav>
+        <section class="container mx-auto p-4">
+            <div class="flex flex-col md:flex-col"> 
+                <div class="md:w-full w-full"> 
+                    <h3 class="text-3xl font-semibold mb-2">Publications</h3>
+                    <p class="text-gray-600 mb-4">See more...</p>
+                </div>
+                <div class="md:w-full flex flex-col space-y-4">
+                    <div class="bg-white p-4 shadow-md rounded-md flex flex-col md:flex-row"> 
+                        <img src="./img/project.jpg" alt="Project 1"
+                            class="w-full md:w-1/4 h-1/4 rounded object-cover mb-4 md:mb-0">
+                        <div class="flex flex-col md:ml-4">
+                            <h3 class="text-lg text-blue-500 font-semibold mb-2">NPR-LBN: Next Point-of-Interest
+                                Recommendation using Large Bipartite Networks with Edge and Cloud Computing</h3>
+                            <a href="#" class="text-blue-500 mt-2">Authors</a>
+                            <p class="text-gray-600 underline">Inayat Khan,<b> *Anwar Sadad</b>, Gauhar Ali, Mohammed
+                                ElAffendi, Razaullah Khan & Tariq Sadad</p>
+                            <a href="#" class="text-blue-500 mt-4">Journals</a>
+                            <p class="text-gray-600">Journal of Cloud Computing | Published: 11 April 2023</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-4 shadow-md rounded-md flex flex-col md:flex-row"> 
+                        <img src="./img/project.jpg" alt="Project"
+                            class="w-full md:w-1/4 h-auto rounded object-cover mb-4 md:mb-0">
+                        <div class="flex flex-col md:ml-4">
+                            <h3 class="text-lg text-blue-500 font-semibold mb-2">NPR-LBN: Next Point-of-Interest
+                                Recommendation using Large Bipartite Networks with Edge and Cloud Computing</h3>
+                            <a href="#" class="text-blue-500 mt-2">Authors</a>
+                            <p class="text-gray-600 underline">Inayat Khan,<b> *Anwar Sadad</b>, Gauhar Ali, Mohammed
+                                ElAffendi, Razaullah Khan & Tariq Sadad</p>
+                            <a href="#" class="text-blue-500 mt-4">Journals</a>
+                            <p class="text-gray-600">Journal of Cloud Computing | Published: 11 April 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
